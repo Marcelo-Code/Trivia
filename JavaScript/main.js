@@ -66,8 +66,10 @@ function style(id) {
         //console.log(i);
         //select_id("categoria").innerHTML = basePreguntas.categoria;
         select_id("pregunta").innerHTML = basePreguntas.pregunta;
-        select_id("imagen").setAttribute("src", basePreguntas.imagen);
+        select_id("imagen").setAttribute("src",  "./images/back\ to\ the\ future.JPG");
 
+        //basePreguntas.imagen = "./images/back\ to\ the\ future.JPG";
+        
         if (basePreguntas.imagen) {
             style("imagen").heigth = "auto";
             style("imagen").width = "100%";
