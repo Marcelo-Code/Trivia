@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="shortcut icon" href="./Images/logo.JPG" />
+    <title>Trivia</title>
+    
+</head>
+<body id="body">
+    <div class = "contenedor" id="contenedor">
+        <div class = "timer" id="timer">0.00 segundos</div>
+        <div class = "encabezado" id="encabezado">
+            <!-- <div class = "categoria" id="categoria">
+                Categoría
+            </div> -->
+            <div class = "pregunta" id="pregunta">
+                Pregunta
+            </div>
+            <img src="" class = "imagen" id="imagen">
+        </div>
+        <div class="btn" id="btn1" onclick="oprimirBoton(0)">
+            Opción 1;
+        </div>
+        <div class="btn" id="btn2" onclick="oprimirBoton(1)">
+            Opción 2;
+        </div>
+        <div class="btn" id="btn3" onclick="oprimirBoton(2)">
+            Opción 3;
+        </div>
+        <div class="btn" id="btn4" onclick="oprimirBoton(3)">
+            Opción 4;
+        </div>       
+    </div>
+    <script src="./JavaScript/timer.js"></script>
+    <script src="./JavaScript/preguntas.js"></script>
+    <script src="./JavaScript/main.js"></script>
+    
+</body>
+</html>
