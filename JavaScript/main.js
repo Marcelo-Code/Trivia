@@ -66,16 +66,19 @@ function style(id) {
         //console.log(i);
         //select_id("categoria").innerHTML = basePreguntas.categoria;
         select_id("pregunta").innerHTML = basePreguntas.pregunta;
-        select_id("imagen").setAttribute("src",  basePreguntas.imagen);
+        // document.getElementById("imagen").setAttribute("src",  "./images/backToTheFuture.JPG")
+        //     //basePreguntas.imagen);
         
+        // console.log(basePreguntas.imagen);
+
         if (basePreguntas.imagen) {
-            style("imagen").heigth = "auto";
-            style("imagen").width = "100%";
-            style("imagen").objectFit = basePreguntas.objectFit;
-        } else {
-            style("imagen").heigth = 0;
-            style("imagen").width = 0;
-        }
+             style("imagen").heigth = "auto";
+             style("imagen").width = "100%";
+             style("imagen").objectFit = basePreguntas.objectFit;
+         } else {
+             style("imagen").heigth = 0;
+             style("imagen").width = 0;
+         }
         select_id("btn1").innerHTML = basePreguntas.respuesta;
         select_id("btn2").innerHTML = basePreguntas.incorrecta1;
         select_id("btn3").innerHTML = basePreguntas.incorrecta2;
