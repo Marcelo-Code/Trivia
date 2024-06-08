@@ -34,11 +34,12 @@ function updateTimer() {
     seconds = Math.floor((difference % (1000 * 60)) / 1000);
     seconds = seconds.toString().padStart(2, '0');
     centiseconds = Math.floor((difference % 1000) / 10);
+    centiseconds = centiseconds.toString().padStart(2, '0');
 
     // Formatear los centisegundos para tener siempre dos dígitos
-    centiseconds = centiseconds < 10 ? "0" + centiseconds : centiseconds;
+    // centiseconds = centiseconds < 10 ? "0" + centiseconds : centiseconds;
 
-    document.getElementById('timer').innerHTML = "Tiempo " + minutes + ":" + seconds + ":" + centiseconds;
+    document.getElementById('timer').innerHTML = "Tiempo " + minutes + ": " + seconds + ": " + centiseconds;
 }
 
 // Iniciar el cronómetro al cargar la página

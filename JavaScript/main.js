@@ -66,8 +66,7 @@ function style(id) {
         //console.log(i);
         //select_id("categoria").innerHTML = basePreguntas.categoria;
         select_id("pregunta").innerHTML = basePreguntas.pregunta;
-        // document.getElementById("imagen").setAttribute("src",  "./images/backToTheFuture.JPG")
-        //     //basePreguntas.imagen);
+        select_id("imagen").setAttribute("src",  basePreguntas.imagen);
         
         // console.log(basePreguntas.imagen);
 
@@ -125,7 +124,7 @@ function style(id) {
                 const body = document.getElementById("body");
                 const contenedor = document.getElementById("contenedor");
                 body.removeChild(contenedor);
-                body.innerHTML = `<div class = "mensaje">¡¡Gracias por participar en la trivia!! ¡¡Recordá visitarnos en nuestro local!!</div>
+                body.innerHTML = `<div class = "mensaje">¡¡Gracias por participar en la trivia!!<br>¡¡Recordá visitarnos en nuestro local!!</div>
                                 <div id="resultadoFinal">
                                         <span class ="respuesta">Estos son tus resultados:</span><br>
                                         <span class ="respuesta">Correctas</span>: ${respuestasCorrectas}<br>
