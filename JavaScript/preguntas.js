@@ -7,7 +7,7 @@ const preguntas = [
         incorrecta1: "Yo",
         incorrecta2: "George McFly",
         incorrecta3: "Biff Tannen",
-        imagen: "./images/backToTheFuture.JPG"
+        imagen: "../images/backToTheFuture.JPG"
     },
     {
         id: 1,
@@ -17,7 +17,7 @@ const preguntas = [
         incorrecta1: "1990",
         incorrecta2: "1980",
         incorrecta3: "1995",
-        imagen: "./images/backToTheFuture.JPG"
+        imagen: "../images/backToTheFuture.JPG"
     },
     {
         id: 2,
@@ -27,7 +27,7 @@ const preguntas = [
         incorrecta1: "Newton",
         incorrecta2: "Galileo",
         incorrecta3: "Tesla",
-        imagen: "./images/backToTheFuture.JPG"
+        imagen: "../images/backToTheFuture.JPG"
     },
     {
         id: 3,
@@ -37,7 +37,7 @@ const preguntas = [
         incorrecta1: "DMC-10",
         incorrecta2: "DMC-20",
         incorrecta3: "DMC-30",
-        imagen: "./images/backToTheFuture.JPG"
+        imagen: "../images/backToTheFuture.JPG"
     },
     {
         id: 4,
@@ -47,7 +47,7 @@ const preguntas = [
         incorrecta1: "Marty Brown",
         incorrecta2: "Marty Baines",
         incorrecta3: "Marty Tannen",
-        imagen: "./images/backToTheFuture.JPG"
+        imagen: "../images/backToTheFuture.JPG"
     },
     {
         id: 5,
@@ -57,7 +57,7 @@ const preguntas = [
         incorrecta1: "78 mph",
         incorrecta2: "98 mph",
         incorrecta3: "68 mph",
-        imagen: "./images/backToTheFuture.JPG"
+        imagen: "../images/backToTheFuture.JPG"
     },
     {
         id: 6,
@@ -67,7 +67,7 @@ const preguntas = [
         incorrecta1: "Goldie Wilson",
         incorrecta2: "Lou Caruthers",
         incorrecta3: "George McFly",
-        imagen: "./images/backToTheFuture.JPG"
+        imagen: "../images/backToTheFuture.JPG"
     },
     {
         id: 7,
@@ -77,7 +77,7 @@ const preguntas = [
         incorrecta1: "¡Eureka!",
         incorrecta2: "¡Por Dios!",
         incorrecta3: "¡Asombroso!",
-        imagen: "./images/backToTheFuture.JPG"
+        imagen: "../images/backToTheFuture.JPG"
     },
     {
         id: 8,
@@ -87,7 +87,7 @@ const preguntas = [
         incorrecta1: "El festival de música",
         incorrecta2: "La inauguración del reloj de la torre",
         incorrecta3: "La feria de ciencia",
-        imagen: "./images/backToTheFuture.JPG"
+        imagen: "../images/backToTheFuture.JPG"
     },
     {
         id: 9,
@@ -97,7 +97,7 @@ const preguntas = [
         incorrecta1: "Adidas",
         incorrecta2: "Puma",
         incorrecta3: "Reebok",
-        imagen: "./images/backToTheFuture.JPG"
+        imagen: "../images/backToTheFuture.JPG"
     },
     {
         id: 10,
@@ -107,7 +107,7 @@ const preguntas = [
         incorrecta1: "George McFly",
         incorrecta2: "Emmet Brown",
         incorrecta3: "Lorraine Baines",
-        imagen: "./images/backToTheFuture.JPG"
+        imagen: "../images/backToTheFuture.JPG"
     },
     {
         id: 11,
@@ -117,7 +117,7 @@ const preguntas = [
         incorrecta1: "Hill City",
         incorrecta2: "Valley Hill",
         incorrecta3: "Hill Town",
-        imagen: "./images/backToTheFuture.JPG"
+        imagen: "../images/backToTheFuture.JPG"
     },
     {
         id: 12,
@@ -127,7 +127,7 @@ const preguntas = [
         incorrecta1: "Jennifer Parker",
         incorrecta2: "Clara Clayton",
         incorrecta3: "Linda McFly",
-        imagen: "./images/backToTheFuture.JPG"
+        imagen: "../images/backToTheFuture.JPG"
     },
     {
         id: 13,
@@ -137,7 +137,7 @@ const preguntas = [
         incorrecta1: "John Wayne",
         incorrecta2: "Billy the Kid",
         incorrecta3: "Wyatt Earp",
-        imagen: "./images/backToTheFuture.JPG"
+        imagen: "../images/backToTheFuture.JPG"
     },
     {
         id: 14,
@@ -147,7 +147,7 @@ const preguntas = [
         incorrecta1: "Un coche",
         incorrecta2: "Una bicicleta",
         incorrecta3: "Una lámpara",
-        imagen: "./images/backToTheFuture.JPG"
+        imagen: "../images/backToTheFuture.JPG"
     },
     {
         id: 15,
@@ -157,7 +157,7 @@ const preguntas = [
         incorrecta1: "Lorraine Baines",
         incorrecta2: "Clara Clayton",
         incorrecta3: "Linda McFly",
-        imagen: "./images/backToTheFuture.JPG"
+        imagen: "../images/backToTheFuture.JPG"
     },
     {
         id: 16,
@@ -167,7 +167,7 @@ const preguntas = [
         incorrecta1: "21 de octubre de 2016",
         incorrecta2: "21 de octubre de 2014",
         incorrecta3: "21 de octubre de 2017",
-        imagen: "./images/backToTheFuture.JPG"
+        imagen: "../images/backToTheFuture.JPG"
     },
     {
         id: 17,
@@ -177,7 +177,7 @@ const preguntas = [
         incorrecta1: "Fútbol americano",
         incorrecta2: "Baloncesto",
         incorrecta3: "Béisbol",
-        imagen: "./images/backToTheFuture.JPG"
+        imagen: "../images/backToTheFuture.JPG"
     },
     {
         id: 18,
@@ -187,7 +187,7 @@ const preguntas = [
         incorrecta1: "Lou Caruthers",
         incorrecta2: "Biff Tannen",
         incorrecta3: "George McFly",
-        imagen: "./images/backToTheFuture.JPG"
+        imagen: "../images/backToTheFuture.JPG"
     },
     {
         id: 19,
@@ -197,6 +197,6 @@ const preguntas = [
         incorrecta1: "Biff Tannen",
         incorrecta2: "Clara Clayton",
         incorrecta3: "George McFly",
-        imagen: "./images/backToTheFuture.JPG"
+        imagen: "../images/backToTheFuture.JPG"
     }
 ];

@@ -4,38 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="shortcut icon" href="./Images/logo.JPG">
-    <title>Trivia</title>
-    
+    <title>Document</title>
 </head>
-<body id="body">
-    <div class = "contenedor" id="contenedor">
-        <div class = "timer" id="timer">0.00 segundos</div>
-        <div class = "encabezado" id="encabezado">
-            <!-- <div class = "categoria" id="categoria">
-                Categoría
-            </div> -->
-            <div class = "pregunta" id="pregunta">
-                Pregunta
-            </div>
-            <img src="" class = "imagen" id="imagen">
-        </div>
-        <div class="btn" id="btn1" onclick="oprimirBoton(0)">
-            Opción 1;
-        </div>
-        <div class="btn" id="btn2" onclick="oprimirBoton(1)">
-            Opción 2;
-        </div>
-        <div class="btn" id="btn3" onclick="oprimirBoton(2)">
-            Opción 3;
-        </div>
-        <div class="btn" id="btn4" onclick="oprimirBoton(3)">
-            Opción 4;
-        </div>       
+<body>
+    <div class = "cartel">
+        <p>Estás a punto de participar en la trivia de Mundo Geek</p>
+        <form action="">
+            <input type="text" id="ingresarIG" class = "ingresarIG" placeholder="😜 escribí tu IG 🚀" required><br>
+        </form>
+        <a class="btnInicio" onclick="tomarIG()" href = "./pages/trivia.html">Comenzar</a>
     </div>
-    <script src="./JavaScript/timer.js"></script>
-    <script src="./JavaScript/preguntas.js"></script>
-    <script src="./JavaScript/main.js"></script>
     
+    <script>
+        function tomarIG(){
+            let texto = document.getElementById("ingresarIG");
+            let nombreIG = texto.value;
+            localStorage.setItem('nombreJugador', nombreIG);
+        }
+    </script>    
 </body>
 </html>

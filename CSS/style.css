@@ -18,6 +18,11 @@
     src: url("../fonts/CC\ Double\ Back\ Past.ttf");
 }
 
+@font-face {
+    font-family: "Digi";
+    src: url("../fonts/DS-DIGI.ttf");
+}
+
 *{
     transition: all 0.3s;
 }
@@ -62,6 +67,8 @@ body {
     color: white;
     border: none;
     font-size: 25px;
+    font-family: "Digi";
+
 }
 
 .encabezado{
@@ -156,6 +163,67 @@ body {
     font-size: 20px;
     color: white;
     border-radius: 30px;
+}
+
+.cartel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    border: none;
+    /* background: rgba(135, 207, 235, 0.216),url(./Fondo.jpg); */
+    /* background-image: url(./Fondo.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0.653), rgba(0, 0, 0, 0.7)), url(../Images/Fondo.jpg), repeat, center, center;
+    background-position: center;
+    background-size: 30%;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 0 20px black;
+    width: 70%;
+    font-size: 25px;
+    color: white;
+    border-radius: 30px;
+}
+
+input[type="text"]{
+    height: 50px;
+    
+    display: block;
+    margin: 0 auto;
+}
+
+.ingresarIG{
+    width: 400px;
+    max-width: 90%;
+    background-color: white;
+    color: black;
+    font-family: "Rancho";
+    font-size: 30px;
+    text-align: center;
+}
+
+.btnInicio{
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 0 10px grey;
+    background-color: white;
+    width: 300px;
+    /* max-width: 300px; */
+    /* min-width: 200px; */
+    padding: 10px;
+    /* margin: 5px; */
+    font-family: "Rancho";
+    font-size: 110%;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnInicio:hover{
+    transform: scale(1.05);
+    box-shadow: inset 0 0 10px grey;
+    
 }
 
 .respuesta{

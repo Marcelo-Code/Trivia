@@ -39,7 +39,7 @@ function updateTimer() {
     // Formatear los centisegundos para tener siempre dos dígitos
     // centiseconds = centiseconds < 10 ? "0" + centiseconds : centiseconds;
 
-    document.getElementById('timer').innerHTML = "Tiempo " + minutes + ": " + seconds + ": " + centiseconds;
+    document.getElementById('timer').innerHTML = minutes + " : " + seconds + "." + centiseconds;
 }
 
 // Iniciar el cronómetro al cargar la página
