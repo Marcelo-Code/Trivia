@@ -29,10 +29,6 @@
 
 
 body {
-    /* background-color: slategrey; */
-    /* background-image: url(./logo.JPG);
-    background-repeat:space; */
-
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../Images/logo2.JPG), repeat, center, center/cover;
     background-size: 20%;
@@ -40,7 +36,6 @@ body {
     margin: 0;
     text-align: center;
     font-family: "Rancho";
-    /* font-weight: bold; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,14 +49,12 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* border: 1px solid white; */
     }
 
 .timer{
     width: 60%;
     max-width: 600px;
     padding: 10px;
-    /* padding-bottom: 10px; */
     border: 1px solid white;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -81,125 +74,64 @@ body {
 }
 
 .categoria{
-    /* opacity: 0.3; */
     text-align: left;
-    /* background:  rgba(135, 207, 235, 0.727); */
 }
 
 .pregunta{
-    padding: 0px; */
-    /* background:  rgba(135, 207, 235, 0.727); */
+    padding: 0px;
 }
 
 .imagen{
-    /* object-fit: cover; */
-    /* height: 200px; */
-    /* width: 200px; */
-    /* height: auto; */
     background: skyblue;
-}
-
-.btn{
-    background-color: skyblue;
-    box-shadow: 0 0 10px black;
-    /* background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); */
-    width: 60%;
-    max-width: 600px;
-    padding: 10px;
-    margin: 5px;
-    font-size: 18px;
-}
-
-.btn:hover{
-    box-shadow: inset 0 0 10px grey;
-    cursor: pointer;
-    transform: scale(1.05);
-}
-
-.btnSalir{
-    border: none;
-    box-shadow: 0 0 10px grey;
-    background-color: white;
-    width: 40%;
-    max-width: 550px;
-    padding: 10px;
-    margin: 5px;
-    font-family: Calibri;
-    font-size: 110%;
-    font-weight: bold;
-}
-
-.btnSalir:hover{
-    box-shadow: inset 0 0 10px grey;
-    cursor: pointer;
-    transform: scale(1.05);
 }
 
 .mensaje{
     border: none;
-    background-color: black(135, 207, 235, 0.816);
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 20px;
     text-align: center;
     box-shadow: 0 0 20px black;
-    width: 100vw;
+    width: 100%;
     font-size: 25px;
-    /* font-style: italic; */
-    /* font-weight: bolder; */
 }
 
-#resultadoFinal{
-    margin-top: 200px;
-    border: none;
-    /* background: rgba(135, 207, 235, 0.216),url(./Fondo.jpg); */
-    /* background-image: url(./Fondo.jpg); */
-    background: linear-gradient(rgba(0, 0, 0, 0.653), rgba(0, 0, 0, 0.7)), url(../Images/Fondo.jpg), repeat, center, center/cover;
-    background-position: center;
-    background-size: 20%;
-    padding: 40px;
-    text-align: center;
-    box-shadow: 0 0 20px black;
-    width: 70%;
-    font-size: 20px;
-    color: white;
-    border-radius: 30px;
+form{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .cartel{
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 20vh;
     border: none;
-    /* background: rgba(135, 207, 235, 0.216),url(./Fondo.jpg); */
-    /* background-image: url(./Fondo.jpg); */
     background: linear-gradient(rgba(0, 0, 0, 0.653), rgba(0, 0, 0, 0.7)), url(../Images/Fondo.jpg), repeat, center, center;
     background-position: center;
     background-size: 30%;
     padding: 40px;
     text-align: center;
     box-shadow: 0 0 20px black;
-    width: 70%;
+    width: 320px;
+    max-width: 100vh;
     font-size: 25px;
     color: white;
-    border-radius: 30px;
 }
 
 input[type="text"]{
     height: 50px;
-    
     display: block;
     margin: 0 auto;
 }
 
 .ingresarIG{
-    width: 400px;
-    max-width: 90%;
+    width: 300px;
+    max-width: 70%;
     background-color: white;
     color: black;
     font-family: "Rancho";
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -208,11 +140,10 @@ input[type="text"]{
     border: none;
     box-shadow: 0 0 10px grey;
     background-color: white;
-    width: 300px;
-    /* max-width: 300px; */
-    /* min-width: 200px; */
+    width: 200px;
     padding: 10px;
-    /* margin: 5px; */
+    padding-left: 20px;
+    padding-right: 20px;
     font-family: "Rancho";
     font-size: 110%;
     color: black;
@@ -226,7 +157,141 @@ input[type="text"]{
     
 }
 
-.respuesta{
+.btn{
+    background-color: skyblue;
+    box-shadow: 0 0 10px black;
+    width: 60%;
+    max-width: 600px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 18px;
+}
+
+.btn:hover{
+    box-shadow: inset 0 0 10px grey;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.botoneraDatos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btnDatos{
+    border: none;
+    box-shadow: 0 0 10px grey;
+    background-color: white;
+    width: 15%;
+    height: 40px;
+    max-width: 550px;
+    padding: 10px;
+    margin: 5px;
+    font-family: Calibri;
+    font-size: 14px;
     font-weight: bold;
-    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btnDatos:hover{
+    box-shadow: inset 0 0 10px grey;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.ranking{
+    display: grid;
+    grid-template-columns: 20% 30% 20% 30%;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+    text-shadow: 0 0 10 black;
+    list-style: none;
+    width: 100vw;
+}
+
+.rankingEncabezadoPosicion{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+    text-shadow: 0 0 20px black;
+}
+
+.rankingEncabezadoNombre{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 20px black;
+}
+
+.rankingEncabezadoCorrectas{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    text-shadow: 0 0 20px black;
+}
+
+.rankingEncabezadoTiempo{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    text-shadow: 0 0 20px black;
+}
+
+.rankingPosicion{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.rankingNombre{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.rankingCorrectas{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.rankingTiempo{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.titulo{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    padding: 20px;
+    margin-top: 0px;
+}
+
+.mundoGeek{
+    /* font-family: "HumanRase";
+    font-size: 20px; */
 }

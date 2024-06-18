@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./Images/logo.JPG">
+    <title>Index</title>
 </head>
+
 <body>
-    <div class = "cartel">
+    <div class="cartel">
         <p>Estás a punto de participar en la trivia de Mundo Geek</p>
         <form action="">
-            <input type="text" id="ingresarIG" class = "ingresarIG" placeholder="😜 escribí tu IG 🚀" required><br>
+            <span>@</span>
+            <input type="text" id="ingresarIG" class="ingresarIG" placeholder="Ingresá tu Ig luego del @ 😎" required>
         </form>
-        <a class="btnInicio" onclick="tomarIG()" href = "./pages/trivia.html">Comenzar</a>
+        <a class="btnInicio" id="btnInicio" onclick="tomarIG()">Comenzar</a>
     </div>
-    
-    <script>
-        function tomarIG(){
-            let texto = document.getElementById("ingresarIG");
-            let nombreIG = texto.value;
-            localStorage.setItem('nombreJugador', nombreIG);
-        }
-    </script>    
+
+    <script src="./JavaScript/ingresarIG.js"></script>
 </body>
+
 </html>

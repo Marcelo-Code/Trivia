@@ -1,3 +1,4 @@
+let data = [];
 let index = 0;
 let respuestasCorrectas = 0;
 let respuestasIncorrectas = 0;
@@ -7,7 +8,7 @@ let basePreguntas = [];
 let botonCorrespondiente = [];
 let arrayNumerosPreguntas = 0;
 let nombreJugador ="";
-let jugador = new Object();
+let jugador = {};
 
 //------ declaración variables globales
 
@@ -34,11 +35,7 @@ function generarOrdenPreguntas(cantidad) {
     }
     return arrayNumerosPreguntas;
 }
-
-arrayNumerosPreguntas = generarOrdenPreguntas(5);
-
-//console.log(arrayNumerosPreguntas);
-
+arrayNumerosPreguntas = generarOrdenPreguntas(20);
 function select_id(id) {
     return document.getElementById(id);
 }
@@ -55,10 +52,7 @@ botonCorrespondiente = [
 ];
 
 function escogerPreguntas() {
-
     nombreJugador = localStorage.getItem("nombreJugador");
-    console.log(nombreJugador);
-
     basePreguntas = preguntas[arrayNumerosPreguntas[index]];
     index += 1;
     select_id("pregunta").innerHTML = basePreguntas.pregunta;
@@ -107,24 +101,30 @@ function oprimirBoton(i) {
         if (index == arrayNumerosPreguntas.length) {
             pauseTimer();
 
-            jugador.nombre = nombreJugador;
-            jugador.correctas = respuestasCorrectas;
-            jugador.tiempo = difference;
-            console.log(jugador);
-
             //terminar programa, mostrar resultados
+
             const body = document.getElementById("body");
             const contenedor = document.getElementById("contenedor");
             body.removeChild(contenedor);
             body.innerHTML = `<div class = "mensaje">¡¡Gracias por participar en la trivia!!<br>¡¡Recordá visitarnos en nuestro local!!</div>
-                                <div id="resultadoFinal">
-                                    <div class ="respuesta"> ${nombreJugador} estos son tus resultados:</div>
-                                    <div class ="respuesta">Correctas: ${respuestasCorrectas}</div>
-                                    <div class ="respuesta">Incorrectas: ${respuestasIncorrectas}</div>
-                                    <div class ="respuesta">Tiempo: ${minutes}:${seconds}:${centiseconds}</div><br>
-                                    <button class = "btnSalir" onclick= "window.close()">Cerrar</button>
+                                <div class = "cartel">
+                                    <div> ${nombreJugador} estos son tus resultados:</div>
+                                    <div> Correctas: ${respuestasCorrectas}</divss>
+                                    <div> Incorrectas: ${respuestasIncorrectas}</div>
+                                    <div> Tiempo: ${minutos} ' ${segundos} . ${milisegundos} "</div=><br><br>
+                                    <a class = "btnInicio" onclick = "cerrarVentana()">Salir</a>
                                 </div>`;
+
+            //Guardar los resutados en archivo:
+
+            jugador.nombre = nombreJugador;
+            jugador.respuestasCorrectas = respuestasCorrectas;
+            jugador.tiempo = difference;
+
+            actualizarRanking(jugador);
+            
         } else {
+
             //reiniciar botones una vez que se contestó la pregunta
 
             for (const btn of botonCorrespondiente) {

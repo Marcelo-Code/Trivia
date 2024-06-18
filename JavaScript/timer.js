@@ -4,9 +4,9 @@ let updatedTime;
 let difference = 0;
 let tInterval;
 let running = false;
-let minutes;
-let seconds;
-let centiseconds;
+let minutos;
+let segundos;
+let milisegundos;
 
 // Función para iniciar el cronómetro
 function startTimer() {
@@ -29,17 +29,16 @@ function pauseTimer() {
 function updateTimer() {
     updatedTime = new Date().getTime();
     difference = updatedTime - startTime;
-    minutes = Math.floor((difference/1000)/60);
-    minutes = minutes.toString().padStart(2, '0');
-    seconds = Math.floor((difference % (1000 * 60)) / 1000);
-    seconds = seconds.toString().padStart(2, '0');
-    centiseconds = Math.floor((difference % 1000) / 10);
-    centiseconds = centiseconds.toString().padStart(2, '0');
+    minutos = Math.floor((difference/60000));
+    minutos = minutos.toString().padStart(2, '0');
+    segundos = Math.floor((difference - minutos*60000)/1000);
+    segundos = segundos.toString().padStart(2, '0');
+    milisegundos = difference - minutos*60000 - segundos*1000;
+    
+    milisegundosDosCifras = milisegundos/10;
+    milisegundosDosCifras = Math.floor(milisegundosDosCifras);
 
-    // Formatear los centisegundos para tener siempre dos dígitos
-    // centiseconds = centiseconds < 10 ? "0" + centiseconds : centiseconds;
-
-    document.getElementById('timer').innerHTML = minutes + " : " + seconds + "." + centiseconds;
+    document.getElementById('timer').innerHTML = minutos + " : " + segundos + "." + milisegundosDosCifras;
 }
 
 // Iniciar el cronómetro al cargar la página
